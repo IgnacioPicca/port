@@ -1,0 +1,15 @@
+const Footer = () => {
+    return (
+        <footer className="h-42 pt-10 text-center ">
+      <div className="w-10/12 mx-auto">
+        <div className="md:flex justify-center text-center ">
+          <span className="font-playfair text-yellow text-2xl">
+            Thanks for passing by.
+          </span>
+        </div>
+      </div>
+    </footer>
+    )
+}
+
+export default Footer;
