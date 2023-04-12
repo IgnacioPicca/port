@@ -72,7 +72,7 @@ const Contact = () => {
                         method="POST"
                     >
                         <input
-                            className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+                            className="w-full bg-blue font-semibold placeholder-deep-blue p-3"
                             type="text"
                             placeholder="Enter your name"
                             {...register("name", {
@@ -87,7 +87,7 @@ const Contact = () => {
                                 </p>
                             )}
                         <input
-                            className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+                            className="w-full bg-blue font-semibold placeholder-deep-blue p-3 mt-5"
                             type="text"
                             placeholder="Enter your email"
                             {...register("email", {
@@ -103,7 +103,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-blue font-semibold placeholder-deep-blue p-3 mt-5"
               name="message"
               placeholder="Tell me your idea"
               rows="4"
@@ -114,7 +114,7 @@ const Contact = () => {
               })}
             />
             {errors.message && (
-              <p className="text-red mt-1">
+              <p className="text-deep-blue mt-1">
                 {errors.message.type === "required" &&
                   "This field is required."}
                 {errors.message.type === "maxLength" &&
