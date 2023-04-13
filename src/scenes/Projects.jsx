@@ -33,7 +33,7 @@ export const icons = [
 ]
 
 const Project = ({ title, subtitle, link }) => {
-    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-gold z-30 flex flex-col justify-center items-center text-center p-16 text-blue text-bold text-xl rounded-xl`;
     const projectTitle = title.split(" ").join("-").toLowerCase();
     return (
         <motion.div className="relative" variants={projectVariant}>
@@ -67,8 +67,8 @@ const Projects = () => {
                 }}
             >
                 <div>
-                    <p className="font-playfair font-semibold text-4xl">
-                        MY <span className="text-red">PRO</span>JECTS
+                    <p className="font-playfair font-semibold text-4xl text-light">
+                        MY <span className="text-gold">PRO</span>JECTS
                     </p>
                     <div className="flex justify-center mt-5 mb-16">
                         <LineGradient width="w-2/3" />
@@ -84,7 +84,7 @@ const Projects = () => {
 
             <div className="flex justify-center">
                 <motion.div
-                    className="sm:grid sm:grid-cols-3"
+                    className="sm:grid sm:grid-cols-3 gap-4"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}

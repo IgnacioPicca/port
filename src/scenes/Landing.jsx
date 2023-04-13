@@ -15,12 +15,12 @@ const Landing = ({ setSelectedPage }) => {
             <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
                 {isAboveMediumScreens ? (
                     <div
-                    className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]"
+                    className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-gold before:z-[-1]"
                     > 
                         <img
                             src="assets/profile-image.png"
                             alt="hero"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+                            className=" z-10 w-full max-w-[400px] md:max-w-[600px]"
                         />
                     </div>
                 ): (
@@ -28,7 +28,7 @@ const Landing = ({ setSelectedPage }) => {
                             <img
                             src="assets/profile-image.png"
                             alt="hero"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+                            className=" z-10 w-full max-w-[400px] md:max-w-[600px]"
                         />
                         </div>   
                 )}
@@ -50,17 +50,9 @@ const Landing = ({ setSelectedPage }) => {
                             visible: {opacity:1, x:0}
                         }}
                     >
-                        <p className="text-6xl font-playfair z-10 text-center md:text-start">
-                            Ignacio {""}
-                            <span
-                                className="xs:relative xs:text-deep-blue xs:font-semibold z-20 
-                                xs:before:content-brush before:absolute before:-left-[40px] before:-top-[125px] before:z-[-1]"
-                            >
-                                Picca
-                            </span>
-                    </p>
+                        <p className="text-6xl font-playfair z-10 text-center md:text-start"> Ignacio Picca</p>
                     
-                        <p className="mt-10 mb-7 text-md text-center md:text-start">
+                        <p className="mt-10 mb-7 text-md text-center md:text-start text-light">
                         Front End developer from Argentina with a curious and creative mind.
                         </p>
                 </motion.div>
@@ -79,22 +71,11 @@ const Landing = ({ setSelectedPage }) => {
                     }}
                 >
                     <AnchorLink
-                        className="bg-gradient-rainblue text-deep-blue	rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500"
+                        className="bg-black text-deep-blue border-2 border-light-500/50 rounded-1xl py-3 px-7 font-semibold hover:text-light transition duration-500"
                         onClick={() => setSelectedPage("contact")}
                         href="#contact"
                     >
-                       <p>Contact Me</p> 
-                    </AnchorLink>
-                    <AnchorLink
-                        className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-                        onClick={() => setSelectedPage("contact")}
-                        href="#contact"
-                    >
-                    <div 
-                    className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10"
-                    >
-                        Let's talk.
-                    </div>
+                       <p>Interested in working together?</p> 
                     </AnchorLink>
                 </motion.div>
 
