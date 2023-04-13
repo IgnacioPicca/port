@@ -2,7 +2,7 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
-const MySkills = () => {
+const About = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
     return (
@@ -101,7 +101,7 @@ const MySkills = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-color2 absolute right-0 top-0 z-[-1]"/>                     
                     </div>
                     <p className="mt-5 text-light">
-                       I completed the Front-end Developer with React JS course at CoderHouse, certified by Ualá and PedidosYa. Currently, I'm studying the second year of the Systems Engineering degree and taking courses in ASP.NET Core web development at Education It.
+                       I completed the Front-end Developer with React JS career at CoderHouse, certified by Ualá and PedidosYa. Currently, I'm studying the second year of the Systems Engineering degree and taking courses in ASP.NET Core web development at Education It.
                     </p>
                 </motion.div>
                 
@@ -135,4 +135,4 @@ const MySkills = () => {
     );
 };
 
-export default MySkills;
+export default About;

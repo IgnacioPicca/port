@@ -4,7 +4,7 @@ import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import LineGradient from "./components/LineGradient"
-import MySkills from "./scenes/MySkills";
+import About from "./scenes/About";
 import Projects from "./scenes/Projects"
 import Contact from "./scenes/Contact"
 import Footer from "./scenes/Footer";
@@ -42,7 +42,7 @@ function App() {
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
-        <MySkills />
+        <About />
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">

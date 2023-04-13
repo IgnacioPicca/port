@@ -33,7 +33,7 @@ export const icons = [
 ]
 
 const Project = ({ title, subtitle, link }) => {
-    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-gold z-30 flex flex-col justify-center items-center text-center p-16 text-blue text-bold text-xl rounded-xl`;
+    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-gold z-30 flex flex-col justify-center items-center text-center p-16 text-blue text-bold text-xl`;
     const projectTitle = title.split(" ").join("-").toLowerCase();
     return (
         <motion.div className="relative" variants={projectVariant}>
@@ -42,7 +42,7 @@ const Project = ({ title, subtitle, link }) => {
                 <p className="text-2xl font-playfair">
                     {title}
                 </p>
-                <p className="mt-7">
+                <p className="mt-7 text-light">
                     {subtitle}
                 </p>
             </div>
@@ -84,7 +84,7 @@ const Projects = () => {
 
             <div className="flex justify-center">
                 <motion.div
-                    className="sm:grid sm:grid-cols-3 gap-4"
+                    className="sm:grid sm:grid-cols-3 gap-2"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -93,14 +93,14 @@ const Projects = () => {
                 >
 
                     {/* ROW 1 */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 justify-items-center py-12 px-8 bg-white/10 backdrop-blur-sm rounded-lg shadow-md max-w-[400px]">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 justify-items-center py-12 px-8 bg-white/10 backdrop-blur-sm shadow-md max-w-[400px]">
                         {/* <p>Focus on user experience to improve usability and accessibility </p>        */}
        
                     { icons.map(i => <SkillsIcon label={i.label} icon={i.icon} key={i.label} />) }
 
                 </div>
-                <Project title="Landing Podcast" subtitle="Landing podcast" link="https://bluedotpodcasts.netlify.app/" />
-                <Project title="Tres4veinte" subtitle="A music academic web" link="https://tres4veinte.netlify.app/" />
+                <Project title="Landing Podcast" subtitle="Landing page" link="https://bluedotpodcasts.netlify.app/" />
+                <Project title="Tres4Veinte" subtitle="A music academic web" link="https://tres4veinte.netlify.app/" />
                     {/* ROW 2 */}
                 <Project title="PiccApple" subtitle="Apple e-commerce" link="https://piccapple.vercel.app/" />
                 <Project title="Memory Game" subtitle="Pokemon memory game" link="https://mentalchallenge.netlify.app/" />
