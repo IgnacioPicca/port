@@ -20,7 +20,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     const navbarTextColor = isTopOfPage ? "text-turquoise" : "text-light";
 
     return (
-        <nav className={`${navbarBackground} ${navbarTextColor} rounded-b-2xl z-40 w-full fixed top-0 py-6 backdrop-filter backdrop-blur-lg bg-opacity-60`}>
+        <nav className={`${navbarBackground} ${navbarTextColor} rounded-b-2xl z-40 w-full fixed top-0 py-6 bg-opacity-60`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
                 <h4 className="font-playfair text-3xl font-bold text-turquoise">
                     iPicca
@@ -28,7 +28,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
                 {/* Desktop Nav */}
                 {isAboveSmallScreens ? (
-                    <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
+                    <div className="flex justify-between gap-16 font-opensans text-sm font-semibold ">
                         <Link
                             page="Home"
                             selectedPage={selectedPage}
@@ -52,7 +52,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                     </div>
                 ) : (
                         <button
-                        className="rounded-full bg-red p-2"
+                        className="rounded-full p-2"
                         onClick={() => setIsMenuToggled(!isMenuToggled)}
                         > 
                         <img src="../assets/menu-icon.svg" alt="menu-icon" />
@@ -61,7 +61,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
                 {/* Mobile Menu*/}
                 {!isAboveSmallScreens && isMenuToggled && (
-                    <div className="fixed right-0 bottom-0 h-full bg-violetd w-[300px]">
+                    <div className="fixed right-0 bottom-0 h-full w-[300px] backdrop-filter backdrop-blur-lg ">
                         {/* Close Icon*/}
                         <div className="flex justify-end p-12">
                             <button onClick={()=> setIsMenuToggled(!isMenuToggled)}>
