@@ -1,4 +1,2 @@
-# My Portfolio
-
-## Link -> [My personal portfolio](https://ipicca.vercel.app/)
+# My Portfolio -> [Link](https://ipicca.vercel.app/)
 
